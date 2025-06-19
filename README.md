@@ -29,7 +29,7 @@ Kurulum ve Çalıştırma
 //-----------------------------------------------------------------------------------------------------------------
 
 1-PROJEYİ İNDİRİN-
-git clone https://github.com/yourusername/ECommerceOrderSystem.git
+git clone https://github.com/hakanozdemir97/ECommerceOrderSystem.git
 cd ECommerceOrderSystem
 
 2-BAĞIMLILIKLARI YÜKLEYİN-
