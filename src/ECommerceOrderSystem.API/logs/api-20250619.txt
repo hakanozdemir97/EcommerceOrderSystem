@@ -1,0 +1,371 @@
+2025-06-19 01:17:01.478 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5274/index.html - null null
+2025-06-19 01:17:01.492 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5274/index.html - 200 null text/html;charset=utf-8 14.2819ms
+2025-06-19 01:17:01.576 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5274/swagger-ui.css - null null
+2025-06-19 01:17:01.577 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5274/swagger-ui-standalone-preset.js - null null
+2025-06-19 01:17:01.577 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5274/swagger-ui-bundle.js - null null
+2025-06-19 01:17:01.592 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-06-19 01:17:01.596 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-06-19 01:17:01.608 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5274/swagger-ui.css - 200 152034 text/css 32.7364ms
+2025-06-19 01:17:01.611 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5274/swagger-ui-standalone-preset.js - 200 230280 text/javascript 34.677ms
+2025-06-19 01:17:01.639 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-06-19 01:17:01.642 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5274/swagger-ui-bundle.js - 200 1456926 text/javascript 65.384ms
+2025-06-19 01:17:01.939 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5274/swagger/v1/swagger.json - null null
+2025-06-19 01:17:01.971 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.7537ms
+2025-06-19 01:18:25.690 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5274/api/Orders - application/json 104
+2025-06-19 01:18:25.706 +03:00 [INF] CORS policy execution successful.
+2025-06-19 01:18:25.721 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14121: JWT is not a well formed JWE, there must be four dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2025-06-19 01:18:25.739 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-06-19 01:18:25.748 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-19 01:18:25.755 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-19 01:18:25.758 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5274/api/Orders - 401 0 null 68.2186ms
+2025-06-19 01:19:00.072 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5274/api/Auth/token - application/json 50
+2025-06-19 01:19:00.077 +03:00 [INF] CORS policy execution successful.
+2025-06-19 01:19:00.081 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14121: JWT is not a well formed JWE, there must be four dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2025-06-19 01:19:00.086 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-06-19 01:19:00.089 +03:00 [INF] Executing endpoint 'ECommerceOrderSystem.API.Controllers.AuthController.GenerateToken (ECommerceOrderSystem.API)'
+2025-06-19 01:19:00.092 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(ECommerceOrderSystem.API.Controllers.TokenRequest) on controller ECommerceOrderSystem.API.Controllers.AuthController (ECommerceOrderSystem.API).
+2025-06-19 01:19:00.097 +03:00 [INF] Token generation requested for UserId: user123
+2025-06-19 01:19:00.099 +03:00 [INF] Token generated successfully for UserId: user123
+2025-06-19 01:19:00.102 +03:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceOrderSystem.API.Controllers.TokenResponse'.
+2025-06-19 01:19:00.106 +03:00 [INF] Executed action ECommerceOrderSystem.API.Controllers.AuthController.GenerateToken (ECommerceOrderSystem.API) in 10.9589ms
+2025-06-19 01:19:00.109 +03:00 [INF] Executed endpoint 'ECommerceOrderSystem.API.Controllers.AuthController.GenerateToken (ECommerceOrderSystem.API)'
+2025-06-19 01:19:00.111 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5274/api/Auth/token - 200 null application/json; charset=utf-8 38.7119ms
+2025-06-19 01:19:45.905 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5274/api/Orders - application/json 104
+2025-06-19 01:19:45.910 +03:00 [INF] CORS policy execution successful.
+2025-06-19 01:19:45.912 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14121: JWT is not a well formed JWE, there must be four dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2025-06-19 01:19:45.916 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-06-19 01:19:45.922 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-19 01:19:45.924 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-19 01:19:45.927 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5274/api/Orders - 401 0 null 21.4406ms
+2025-06-19 01:21:18.828 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5274/api/Orders - application/json 104
+2025-06-19 01:21:18.833 +03:00 [INF] CORS policy execution successful.
+2025-06-19 01:21:18.836 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.ValidateAndGetOutputSize(ReadOnlySpan`1 strSpan, Int32 offset, Int32 length)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2025-06-19 01:21:18.846 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-06-19 01:21:18.849 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-19 01:21:18.851 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-19 01:21:18.854 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5274/api/Orders - 401 0 null 26.0191ms
+2025-06-19 01:21:26.479 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5274/api/Auth/token - application/json 50
+2025-06-19 01:21:26.485 +03:00 [INF] CORS policy execution successful.
+2025-06-19 01:21:26.486 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.ValidateAndGetOutputSize(ReadOnlySpan`1 strSpan, Int32 offset, Int32 length)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2025-06-19 01:21:26.492 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-06-19 01:21:26.495 +03:00 [INF] Executing endpoint 'ECommerceOrderSystem.API.Controllers.AuthController.GenerateToken (ECommerceOrderSystem.API)'
+2025-06-19 01:21:26.498 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(ECommerceOrderSystem.API.Controllers.TokenRequest) on controller ECommerceOrderSystem.API.Controllers.AuthController (ECommerceOrderSystem.API).
+2025-06-19 01:21:26.503 +03:00 [INF] Token generation requested for UserId: user123
+2025-06-19 01:21:26.505 +03:00 [INF] Token generated successfully for UserId: user123
+2025-06-19 01:21:26.507 +03:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceOrderSystem.API.Controllers.TokenResponse'.
+2025-06-19 01:21:26.510 +03:00 [INF] Executed action ECommerceOrderSystem.API.Controllers.AuthController.GenerateToken (ECommerceOrderSystem.API) in 6.6457ms
+2025-06-19 01:21:26.513 +03:00 [INF] Executed endpoint 'ECommerceOrderSystem.API.Controllers.AuthController.GenerateToken (ECommerceOrderSystem.API)'
+2025-06-19 01:21:26.515 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5274/api/Auth/token - 200 null application/json; charset=utf-8 36.1715ms
+2025-06-19 01:23:05.957 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5274/api/Orders - application/json 104
+2025-06-19 01:23:05.962 +03:00 [INF] CORS policy execution successful.
+2025-06-19 01:23:06.003 +03:00 [INF] Executing endpoint 'ECommerceOrderSystem.API.Controllers.OrdersController.CreateOrder (ECommerceOrderSystem.API)'
+2025-06-19 01:23:06.011 +03:00 [INF] Route matched with {action = "CreateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrder(ECommerceOrderSystem.Application.Orders.Commands.CreateOrder.CreateOrderCommand) on controller ECommerceOrderSystem.API.Controllers.OrdersController (ECommerceOrderSystem.API).
+2025-06-19 01:23:06.025 +03:00 [INF] Creating order for UserId: user123
+2025-06-19 01:23:10.486 +03:00 [ERR] Failed to establish RabbitMQ connection
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (10061): Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at ECommerceOrderSystem.Infrastructure.Messaging.RabbitMQEventPublisher..ctor(IConfiguration configuration, ILogger`1 logger) in C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Infrastructure\Messaging\RabbitMQEventPublisher.cs:line 31
+2025-06-19 01:23:10.522 +03:00 [ERR] Unexpected error while creating order
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (10061): Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at ECommerceOrderSystem.Infrastructure.Messaging.RabbitMQEventPublisher..ctor(IConfiguration configuration, ILogger`1 logger) in C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Infrastructure\Messaging\RabbitMQEventPublisher.cs:line 31
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.Handle(IRequest`1 request, IServiceProvider serviceProvider, CancellationToken cancellationToken)
+   at MediatR.Mediator.Send[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at ECommerceOrderSystem.API.Controllers.OrdersController.CreateOrder(CreateOrderCommand command) in C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.API\Controllers\OrdersController.cs:line 41
+2025-06-19 01:23:10.552 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-19 01:23:10.556 +03:00 [INF] Executed action ECommerceOrderSystem.API.Controllers.OrdersController.CreateOrder (ECommerceOrderSystem.API) in 4540.6554ms
+2025-06-19 01:23:10.558 +03:00 [INF] Executed endpoint 'ECommerceOrderSystem.API.Controllers.OrdersController.CreateOrder (ECommerceOrderSystem.API)'
+2025-06-19 01:23:10.563 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5274/api/Orders - 500 null application/json; charset=utf-8 4605.5838ms
+2025-06-19 01:25:04.520 +03:00 [INF] Application is shutting down...
+2025-06-19 01:25:20.890 +03:00 [INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-19 01:25:21.126 +03:00 [INF] Now listening on: http://localhost:5274
+2025-06-19 01:25:21.132 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-19 01:25:21.134 +03:00 [INF] Hosting environment: Development
+2025-06-19 01:25:21.137 +03:00 [INF] Content root path: C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.API
+2025-06-19 01:25:59.751 +03:00 [INF] Application is shutting down...
+2025-06-19 01:26:07.823 +03:00 [INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-19 01:26:07.971 +03:00 [INF] Now listening on: http://localhost:5274
+2025-06-19 01:26:07.975 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-19 01:26:07.977 +03:00 [INF] Hosting environment: Development
+2025-06-19 01:26:07.979 +03:00 [INF] Content root path: C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.API
+2025-06-19 01:26:17.326 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5274/ - null null
+2025-06-19 01:26:17.382 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5274/ - 301 0 null 58.8283ms
+2025-06-19 01:26:17.394 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5274/index.html - null null
+2025-06-19 01:26:17.466 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5274/index.html - 200 null text/html;charset=utf-8 72.6556ms
+2025-06-19 01:26:17.843 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5274/swagger/v1/swagger.json - null null
+2025-06-19 01:26:18.084 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 240.5882ms
+2025-06-19 01:26:36.805 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5274/api/Auth/token - application/json 50
+2025-06-19 01:26:36.818 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-06-19 01:26:36.820 +03:00 [INF] CORS policy execution successful.
+2025-06-19 01:26:36.864 +03:00 [INF] Executing endpoint 'ECommerceOrderSystem.API.Controllers.AuthController.GenerateToken (ECommerceOrderSystem.API)'
+2025-06-19 01:26:36.898 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(ECommerceOrderSystem.API.Controllers.TokenRequest) on controller ECommerceOrderSystem.API.Controllers.AuthController (ECommerceOrderSystem.API).
+2025-06-19 01:26:36.935 +03:00 [INF] Token generation requested for UserId: user123
+2025-06-19 01:26:36.980 +03:00 [INF] Token generated successfully for UserId: user123
+2025-06-19 01:26:36.988 +03:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceOrderSystem.API.Controllers.TokenResponse'.
+2025-06-19 01:26:37.003 +03:00 [INF] Executed action ECommerceOrderSystem.API.Controllers.AuthController.GenerateToken (ECommerceOrderSystem.API) in 97.5206ms
+2025-06-19 01:26:37.005 +03:00 [INF] Executed endpoint 'ECommerceOrderSystem.API.Controllers.AuthController.GenerateToken (ECommerceOrderSystem.API)'
+2025-06-19 01:26:37.007 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5274/api/Auth/token - 200 null application/json; charset=utf-8 201.971ms
+2025-06-19 01:27:20.653 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5274/api/Orders - application/json 104
+2025-06-19 01:27:20.660 +03:00 [INF] CORS policy execution successful.
+2025-06-19 01:27:20.701 +03:00 [INF] Executing endpoint 'ECommerceOrderSystem.API.Controllers.OrdersController.CreateOrder (ECommerceOrderSystem.API)'
+2025-06-19 01:27:20.710 +03:00 [INF] Route matched with {action = "CreateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrder(ECommerceOrderSystem.Application.Orders.Commands.CreateOrder.CreateOrderCommand) on controller ECommerceOrderSystem.API.Controllers.OrdersController (ECommerceOrderSystem.API).
+2025-06-19 01:27:20.725 +03:00 [INF] Creating order for UserId: user123
+2025-06-19 01:27:24.891 +03:00 [ERR] Failed to establish RabbitMQ connection
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (10061): Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at ECommerceOrderSystem.Infrastructure.Messaging.RabbitMQEventPublisher..ctor(IConfiguration configuration, ILogger`1 logger) in C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Infrastructure\Messaging\RabbitMQEventPublisher.cs:line 31
+2025-06-19 01:27:24.915 +03:00 [ERR] Unexpected error while creating order
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (10061): Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at ECommerceOrderSystem.Infrastructure.Messaging.RabbitMQEventPublisher..ctor(IConfiguration configuration, ILogger`1 logger) in C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Infrastructure\Messaging\RabbitMQEventPublisher.cs:line 31
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.Handle(IRequest`1 request, IServiceProvider serviceProvider, CancellationToken cancellationToken)
+   at MediatR.Mediator.Send[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at ECommerceOrderSystem.API.Controllers.OrdersController.CreateOrder(CreateOrderCommand command) in C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.API\Controllers\OrdersController.cs:line 41
+2025-06-19 01:27:24.932 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-19 01:27:24.936 +03:00 [INF] Executed action ECommerceOrderSystem.API.Controllers.OrdersController.CreateOrder (ECommerceOrderSystem.API) in 4221.7512ms
+2025-06-19 01:27:24.939 +03:00 [INF] Executed endpoint 'ECommerceOrderSystem.API.Controllers.OrdersController.CreateOrder (ECommerceOrderSystem.API)'
+2025-06-19 01:27:24.945 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5274/api/Orders - 500 null application/json; charset=utf-8 4291.8406ms
+2025-06-19 01:32:53.599 +03:00 [INF] Application is shutting down...
+2025-06-19 01:35:30.172 +03:00 [INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-19 01:35:30.416 +03:00 [INF] Now listening on: http://localhost:5274
+2025-06-19 01:35:30.429 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-19 01:35:30.432 +03:00 [INF] Hosting environment: Development
+2025-06-19 01:35:30.434 +03:00 [INF] Content root path: C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.API
+2025-06-19 01:35:54.158 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5274/index.html - null null
+2025-06-19 01:35:54.343 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5274/index.html - 200 null text/html;charset=utf-8 188.3056ms
+2025-06-19 01:35:54.662 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5274/swagger/v1/swagger.json - null null
+2025-06-19 01:35:54.854 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 192.512ms
+2025-06-19 01:36:25.841 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5274/api/Auth/token - application/json 50
+2025-06-19 01:36:25.861 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-06-19 01:36:25.867 +03:00 [INF] CORS policy execution successful.
+2025-06-19 01:36:25.902 +03:00 [INF] Executing endpoint 'ECommerceOrderSystem.API.Controllers.AuthController.GenerateToken (ECommerceOrderSystem.API)'
+2025-06-19 01:36:25.939 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(ECommerceOrderSystem.API.Controllers.TokenRequest) on controller ECommerceOrderSystem.API.Controllers.AuthController (ECommerceOrderSystem.API).
+2025-06-19 01:36:25.982 +03:00 [INF] Token generation requested for UserId: user123
+2025-06-19 01:36:26.012 +03:00 [INF] Token generated successfully for UserId: user123
+2025-06-19 01:36:26.019 +03:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceOrderSystem.API.Controllers.TokenResponse'.
+2025-06-19 01:36:26.032 +03:00 [INF] Executed action ECommerceOrderSystem.API.Controllers.AuthController.GenerateToken (ECommerceOrderSystem.API) in 85.9297ms
+2025-06-19 01:36:26.035 +03:00 [INF] Executed endpoint 'ECommerceOrderSystem.API.Controllers.AuthController.GenerateToken (ECommerceOrderSystem.API)'
+2025-06-19 01:36:26.037 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5274/api/Auth/token - 200 null application/json; charset=utf-8 196.6123ms
+2025-06-19 01:37:28.315 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5274/api/Orders - application/json 104
+2025-06-19 01:37:28.321 +03:00 [INF] CORS policy execution successful.
+2025-06-19 01:37:28.367 +03:00 [INF] Executing endpoint 'ECommerceOrderSystem.API.Controllers.OrdersController.CreateOrder (ECommerceOrderSystem.API)'
+2025-06-19 01:37:28.373 +03:00 [INF] Route matched with {action = "CreateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrder(ECommerceOrderSystem.Application.Orders.Commands.CreateOrder.CreateOrderCommand) on controller ECommerceOrderSystem.API.Controllers.OrdersController (ECommerceOrderSystem.API).
+2025-06-19 01:37:28.391 +03:00 [INF] Creating order for UserId: user123
+2025-06-19 01:37:29.132 +03:00 [INF] Saved 1 entities to in-memory store.
+2025-06-19 01:37:29.142 +03:00 [INF] Order saved to database. OrderId: "7f39ec48-d377-4c5d-b189-7bb81dddca4a"
+2025-06-19 01:37:29.145 +03:00 [INF] Order created successfully. OrderId: "7f39ec48-d377-4c5d-b189-7bb81dddca4a"
+2025-06-19 01:37:29.149 +03:00 [INF] OrderPlacedEvent published for OrderId: "7f39ec48-d377-4c5d-b189-7bb81dddca4a"
+2025-06-19 01:37:29.152 +03:00 [INF] Order created successfully. OrderId: "7f39ec48-d377-4c5d-b189-7bb81dddca4a"
+2025-06-19 01:37:29.154 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'ECommerceOrderSystem.Application.Orders.Commands.CreateOrder.CreateOrderResponse'.
+2025-06-19 01:37:29.184 +03:00 [INF] Executed action ECommerceOrderSystem.API.Controllers.OrdersController.CreateOrder (ECommerceOrderSystem.API) in 805.4543ms
+2025-06-19 01:37:29.187 +03:00 [INF] Executed endpoint 'ECommerceOrderSystem.API.Controllers.OrdersController.CreateOrder (ECommerceOrderSystem.API)'
+2025-06-19 01:37:29.191 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5274/api/Orders - 201 null application/json; charset=utf-8 876.4047ms
+2025-06-19 01:41:01.915 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5274/api/Orders/user123 - null null
+2025-06-19 01:41:01.934 +03:00 [INF] Executing endpoint 'ECommerceOrderSystem.API.Controllers.OrdersController.GetUserOrders (ECommerceOrderSystem.API)'
+2025-06-19 01:41:01.943 +03:00 [INF] Route matched with {action = "GetUserOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserOrders(System.String) on controller ECommerceOrderSystem.API.Controllers.OrdersController (ECommerceOrderSystem.API).
+2025-06-19 01:41:01.950 +03:00 [INF] Retrieving orders for UserId: user123
+2025-06-19 01:41:02.199 +03:00 [INF] Retrieved 1 orders for UserId: user123
+2025-06-19 01:41:02.203 +03:00 [INF] Orders retrieved from database and cached for UserId: user123. Count: 1
+2025-06-19 01:41:02.205 +03:00 [INF] Retrieved 1 orders for UserId: user123
+2025-06-19 01:41:02.209 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerceOrderSystem.Application.Orders.Queries.GetUserOrders.UserOrderResponse, ECommerceOrderSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-19 01:41:02.225 +03:00 [INF] Executed action ECommerceOrderSystem.API.Controllers.OrdersController.GetUserOrders (ECommerceOrderSystem.API) in 277.3858ms
+2025-06-19 01:41:02.229 +03:00 [INF] Executed endpoint 'ECommerceOrderSystem.API.Controllers.OrdersController.GetUserOrders (ECommerceOrderSystem.API)'
+2025-06-19 01:41:02.232 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5274/api/Orders/user123 - 200 null application/json; charset=utf-8 316.592ms
+2025-06-19 01:41:04.330 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5274/api/Orders/user123 - null null
+2025-06-19 01:41:04.337 +03:00 [INF] Executing endpoint 'ECommerceOrderSystem.API.Controllers.OrdersController.GetUserOrders (ECommerceOrderSystem.API)'
+2025-06-19 01:41:04.338 +03:00 [INF] Route matched with {action = "GetUserOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserOrders(System.String) on controller ECommerceOrderSystem.API.Controllers.OrdersController (ECommerceOrderSystem.API).
+2025-06-19 01:41:04.343 +03:00 [INF] Retrieving orders for UserId: user123
+2025-06-19 01:41:04.348 +03:00 [INF] Orders retrieved from cache for UserId: user123
+2025-06-19 01:41:04.351 +03:00 [INF] Retrieved 1 orders for UserId: user123
+2025-06-19 01:41:04.353 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerceOrderSystem.Application.Orders.Queries.GetUserOrders.UserOrderResponse, ECommerceOrderSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-19 01:41:04.356 +03:00 [INF] Executed action ECommerceOrderSystem.API.Controllers.OrdersController.GetUserOrders (ECommerceOrderSystem.API) in 14.4236ms
+2025-06-19 01:41:04.359 +03:00 [INF] Executed endpoint 'ECommerceOrderSystem.API.Controllers.OrdersController.GetUserOrders (ECommerceOrderSystem.API)'
+2025-06-19 01:41:04.362 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5274/api/Orders/user123 - 200 null application/json; charset=utf-8 32.0542ms
+2025-06-19 01:45:08.737 +03:00 [INF] Application is shutting down...
