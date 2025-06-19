@@ -1,0 +1,11 @@
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Domain\bin\Debug\net8.0\ECommerceOrderSystem.Domain.deps.json
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Domain\bin\Debug\net8.0\ECommerceOrderSystem.Domain.dll
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Domain\bin\Debug\net8.0\ECommerceOrderSystem.Domain.pdb
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Domain\obj\Debug\net8.0\ECommerceOrderSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Domain\obj\Debug\net8.0\ECommerceOrderSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Domain\obj\Debug\net8.0\ECommerceOrderSystem.Domain.AssemblyInfo.cs
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Domain\obj\Debug\net8.0\ECommerceOrderSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Domain\obj\Debug\net8.0\ECommerceOrderSystem.Domain.dll
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Domain\obj\Debug\net8.0\refint\ECommerceOrderSystem.Domain.dll
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Domain\obj\Debug\net8.0\ECommerceOrderSystem.Domain.pdb
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Domain\obj\Debug\net8.0\ref\ECommerceOrderSystem.Domain.dll
