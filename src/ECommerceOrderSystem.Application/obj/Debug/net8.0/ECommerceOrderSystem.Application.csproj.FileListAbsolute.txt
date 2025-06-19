@@ -1,0 +1,15 @@
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\bin\Debug\net8.0\ECommerceOrderSystem.Application.deps.json
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\bin\Debug\net8.0\ECommerceOrderSystem.Application.dll
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\bin\Debug\net8.0\ECommerceOrderSystem.Application.pdb
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\bin\Debug\net8.0\ECommerceOrderSystem.Domain.dll
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\bin\Debug\net8.0\ECommerceOrderSystem.Domain.pdb
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\obj\Debug\net8.0\ECommerceOrderSystem.Application.csproj.AssemblyReference.cache
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\obj\Debug\net8.0\ECommerceOrderSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\obj\Debug\net8.0\ECommerceOrderSystem.Application.AssemblyInfoInputs.cache
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\obj\Debug\net8.0\ECommerceOrderSystem.Application.AssemblyInfo.cs
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\obj\Debug\net8.0\ECommerceOrderSystem.Application.csproj.CoreCompileInputs.cache
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\obj\Debug\net8.0\ECommerceOrderSystem.Application.csproj.CopyComplete
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\obj\Debug\net8.0\ECommerceOrderSystem.Application.dll
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\obj\Debug\net8.0\refint\ECommerceOrderSystem.Application.dll
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\obj\Debug\net8.0\ECommerceOrderSystem.Application.pdb
+C:\Users\PC\ECommerceOrderSystem\src\ECommerceOrderSystem.Application\obj\Debug\net8.0\ref\ECommerceOrderSystem.Application.dll
